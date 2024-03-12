@@ -7,18 +7,29 @@
 
 import SwiftUI
 
+// View
 struct ContentView: View {
+    @StateObject var data = Data()
+    @AppStorage("darkMode") var darkMode = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(data.articles) { article in
+                NavigationLink(destination: Detail(article: article, darkMode: $darkMode)) {
+                    Row(article: article)
+                }
+            }
+            .navigationTitle("demo")
+            .toolbar {
+                Setting(darkMode: $darkMode)
+            }
         }
-        .padding()
+        .preferredColorScheme(darkMode ? .dark : .light)
     }
 }
 
 #Preview {
     ContentView()
 }
+
+
