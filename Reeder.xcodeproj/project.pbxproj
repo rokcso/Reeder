@@ -16,6 +16,8 @@
 		C8F2E0B72BA04CE800B9B96D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0B62BA04CE800B9B96D /* Detail.swift */; };
 		C8F2E0B92BA0557500B9B96D /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0B82BA0557500B9B96D /* Setting.swift */; };
 		C8F2E0BB2BA056F300B9B96D /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0BA2BA056F300B9B96D /* Vibration.swift */; };
+		C8F2E0BD2BA05BC100B9B96D /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0BC2BA05BC100B9B96D /* MotionManager.swift */; };
+		C8F2E0BF2BA06D5700B9B96D /* Locked.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0BE2BA06D5700B9B96D /* Locked.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C8F2E0B62BA04CE800B9B96D /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		C8F2E0B82BA0557500B9B96D /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		C8F2E0BA2BA056F300B9B96D /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
+		C8F2E0BC2BA05BC100B9B96D /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		C8F2E0BE2BA06D5700B9B96D /* Locked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locked.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				C84CB5412BA02A6B002893D8 /* ReederApp.swift */,
+				C8F2E0BE2BA06D5700B9B96D /* Locked.swift */,
 				C84CB5432BA02A6B002893D8 /* ContentView.swift */,
 				C8F2E0BA2BA056F300B9B96D /* Vibration.swift */,
 				C8F2E0B82BA0557500B9B96D /* Setting.swift */,
+				C8F2E0BC2BA05BC100B9B96D /* MotionManager.swift */,
 				C8F2E0B62BA04CE800B9B96D /* Detail.swift */,
 				C84CB54F2BA02B80002893D8 /* Row.swift */,
 				C8F2E0B42BA0403200B9B96D /* Data.swift */,
@@ -154,11 +160,13 @@
 			files = (
 				C8F2E0BB2BA056F300B9B96D /* Vibration.swift in Sources */,
 				C84CB5442BA02A6B002893D8 /* ContentView.swift in Sources */,
+				C8F2E0BF2BA06D5700B9B96D /* Locked.swift in Sources */,
 				C8F2E0B72BA04CE800B9B96D /* Detail.swift in Sources */,
 				C8F2E0B92BA0557500B9B96D /* Setting.swift in Sources */,
 				C84CB5502BA02B80002893D8 /* Row.swift in Sources */,
 				C84CB5422BA02A6B002893D8 /* ReederApp.swift in Sources */,
 				C8F2E0B52BA0403200B9B96D /* Data.swift in Sources */,
+				C8F2E0BD2BA05BC100B9B96D /* MotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +302,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Reeder/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +331,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Reeder/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
