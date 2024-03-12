@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4066EDC2BA094B9005E9CBE /* ReadingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4066EDB2BA094B9005E9CBE /* ReadingNote.swift */; };
+		C4728AA72BA0997F004EFFD4 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4728AA62BA0997F004EFFD4 /* RoundButton.swift */; };
+		C4728AAA2BA09BD1004EFFD4 /* FullScreenSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = C4728AA92BA09BD1004EFFD4 /* FullScreenSafariView */; };
+		C4728AAC2BA09DB7004EFFD4 /* TabNoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4728AAB2BA09DB7004EFFD4 /* TabNoteData.swift */; };
+		C4728AAE2BA0A312004EFFD4 /* NoteEntryAndList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4728AAD2BA0A312004EFFD4 /* NoteEntryAndList.swift */; };
 		C84CB5422BA02A6B002893D8 /* ReederApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CB5412BA02A6B002893D8 /* ReederApp.swift */; };
 		C84CB5442BA02A6B002893D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CB5432BA02A6B002893D8 /* ContentView.swift */; };
 		C84CB5462BA02A6C002893D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84CB5452BA02A6C002893D8 /* Assets.xcassets */; };
 		C84CB5492BA02A6C002893D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84CB5482BA02A6C002893D8 /* Preview Assets.xcassets */; };
 		C84CB5502BA02B80002893D8 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CB54F2BA02B80002893D8 /* Row.swift */; };
-		C8F2E0B52BA0403200B9B96D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0B42BA0403200B9B96D /* Data.swift */; };
+		C8F2E0B52BA0403200B9B96D /* TabReadingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0B42BA0403200B9B96D /* TabReadingData.swift */; };
 		C8F2E0B72BA04CE800B9B96D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0B62BA04CE800B9B96D /* Detail.swift */; };
 		C8F2E0B92BA0557500B9B96D /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0B82BA0557500B9B96D /* Setting.swift */; };
 		C8F2E0BB2BA056F300B9B96D /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2E0BA2BA056F300B9B96D /* Vibration.swift */; };
@@ -21,13 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4066EDB2BA094B9005E9CBE /* ReadingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingNote.swift; sourceTree = "<group>"; };
+		C4728AA62BA0997F004EFFD4 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		C4728AAB2BA09DB7004EFFD4 /* TabNoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNoteData.swift; sourceTree = "<group>"; };
+		C4728AAD2BA0A312004EFFD4 /* NoteEntryAndList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntryAndList.swift; sourceTree = "<group>"; };
 		C84CB53E2BA02A6B002893D8 /* Reeder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reeder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84CB5412BA02A6B002893D8 /* ReederApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReederApp.swift; sourceTree = "<group>"; };
 		C84CB5432BA02A6B002893D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C84CB5452BA02A6C002893D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C84CB5482BA02A6C002893D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C84CB54F2BA02B80002893D8 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
-		C8F2E0B42BA0403200B9B96D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C8F2E0B42BA0403200B9B96D /* TabReadingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabReadingData.swift; sourceTree = "<group>"; };
 		C8F2E0B62BA04CE800B9B96D /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		C8F2E0B82BA0557500B9B96D /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		C8F2E0BA2BA056F300B9B96D /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
@@ -40,12 +49,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4728AAA2BA09BD1004EFFD4 /* FullScreenSafariView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4066ED82BA093AA005E9CBE /* Hepler */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2E0BA2BA056F300B9B96D /* Vibration.swift */,
+			);
+			path = Hepler;
+			sourceTree = "<group>";
+		};
+		C4066ED92BA093EC005E9CBE /* Model+ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8F2E0B42BA0403200B9B96D /* TabReadingData.swift */,
+				C4728AAB2BA09DB7004EFFD4 /* TabNoteData.swift */,
+				C8F2E0BC2BA05BC100B9B96D /* MotionManager.swift */,
+			);
+			path = "Model+ViewModel";
+			sourceTree = "<group>";
+		};
+		C4066EDA2BA0941B005E9CBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C84CB5412BA02A6B002893D8 /* ReederApp.swift */,
+				C84CB5432BA02A6B002893D8 /* ContentView.swift */,
+				C84CB54F2BA02B80002893D8 /* Row.swift */,
+				C8F2E0B62BA04CE800B9B96D /* Detail.swift */,
+				C8F2E0B82BA0557500B9B96D /* Setting.swift */,
+				C8F2E0BE2BA06D5700B9B96D /* Locked.swift */,
+				C4066EDB2BA094B9005E9CBE /* ReadingNote.swift */,
+				C4728AAD2BA0A312004EFFD4 /* NoteEntryAndList.swift */,
+				C4728AA62BA0997F004EFFD4 /* RoundButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C84CB5352BA02A6B002893D8 = {
 			isa = PBXGroup;
 			children = (
@@ -65,15 +109,9 @@
 		C84CB5402BA02A6B002893D8 /* Reeder */ = {
 			isa = PBXGroup;
 			children = (
-				C84CB5412BA02A6B002893D8 /* ReederApp.swift */,
-				C8F2E0BE2BA06D5700B9B96D /* Locked.swift */,
-				C84CB5432BA02A6B002893D8 /* ContentView.swift */,
-				C8F2E0BA2BA056F300B9B96D /* Vibration.swift */,
-				C8F2E0B82BA0557500B9B96D /* Setting.swift */,
-				C8F2E0BC2BA05BC100B9B96D /* MotionManager.swift */,
-				C8F2E0B62BA04CE800B9B96D /* Detail.swift */,
-				C84CB54F2BA02B80002893D8 /* Row.swift */,
-				C8F2E0B42BA0403200B9B96D /* Data.swift */,
+				C4066EDA2BA0941B005E9CBE /* Views */,
+				C4066ED92BA093EC005E9CBE /* Model+ViewModel */,
+				C4066ED82BA093AA005E9CBE /* Hepler */,
 				C84CB5452BA02A6C002893D8 /* Assets.xcassets */,
 				C84CB5472BA02A6C002893D8 /* Preview Content */,
 			);
@@ -104,6 +142,9 @@
 			dependencies = (
 			);
 			name = Reeder;
+			packageProductDependencies = (
+				C4728AA92BA09BD1004EFFD4 /* FullScreenSafariView */,
+			);
 			productName = Reeder;
 			productReference = C84CB53E2BA02A6B002893D8 /* Reeder.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +173,9 @@
 				Base,
 			);
 			mainGroup = C84CB5352BA02A6B002893D8;
+			packageReferences = (
+				C4728AA82BA09BD1004EFFD4 /* XCRemoteSwiftPackageReference "BetterSafariView" */,
+			);
 			productRefGroup = C84CB53F2BA02A6B002893D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,10 +206,14 @@
 				C84CB5442BA02A6B002893D8 /* ContentView.swift in Sources */,
 				C8F2E0BF2BA06D5700B9B96D /* Locked.swift in Sources */,
 				C8F2E0B72BA04CE800B9B96D /* Detail.swift in Sources */,
+				C4728AA72BA0997F004EFFD4 /* RoundButton.swift in Sources */,
 				C8F2E0B92BA0557500B9B96D /* Setting.swift in Sources */,
 				C84CB5502BA02B80002893D8 /* Row.swift in Sources */,
+				C4728AAC2BA09DB7004EFFD4 /* TabNoteData.swift in Sources */,
+				C4066EDC2BA094B9005E9CBE /* ReadingNote.swift in Sources */,
 				C84CB5422BA02A6B002893D8 /* ReederApp.swift in Sources */,
-				C8F2E0B52BA0403200B9B96D /* Data.swift in Sources */,
+				C8F2E0B52BA0403200B9B96D /* TabReadingData.swift in Sources */,
+				C4728AAE2BA0A312004EFFD4 /* NoteEntryAndList.swift in Sources */,
 				C8F2E0BD2BA05BC100B9B96D /* MotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Reeder/Preview Content\"";
+				DEVELOPMENT_TEAM = 3373D54HZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your App";
@@ -308,6 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Reeder/Preview Content\"";
+				DEVELOPMENT_TEAM = 3373D54HZQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your App";
@@ -337,6 +388,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4728AA82BA09BD1004EFFD4 /* XCRemoteSwiftPackageReference "BetterSafariView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stleamist/BetterSafariView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4728AA92BA09BD1004EFFD4 /* FullScreenSafariView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4728AA82BA09BD1004EFFD4 /* XCRemoteSwiftPackageReference "BetterSafariView" */;
+			productName = FullScreenSafariView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C84CB5362BA02A6B002893D8 /* Project object */;
 }

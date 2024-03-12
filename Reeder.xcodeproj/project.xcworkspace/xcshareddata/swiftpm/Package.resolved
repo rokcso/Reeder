@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "bettersafariview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stleamist/BetterSafariView",
+      "state" : {
+        "revision" : "88b7d1a2092375898a79325f1fa64c9012ade8d8",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

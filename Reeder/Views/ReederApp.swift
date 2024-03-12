@@ -20,8 +20,17 @@ struct ReederApp: App {
                 if locked {
                     Locked(authorize: authorize)
                 } else {
-                    ContentView()
-                        .environmentObject(motionManager)
+                    TabView {
+                        ContentView()
+                            .environmentObject(motionManager)
+                            .tabItem {
+                                Label("Reading", systemImage: "books.vertical")
+                            }
+                        ReadingNote()
+                            .tabItem {
+                                Label("Notes", systemImage: "note.text")
+                            }
+                    }
                 }
             }
             .onAppear{ authorize() }

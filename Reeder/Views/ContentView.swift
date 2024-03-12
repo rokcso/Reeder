@@ -9,7 +9,7 @@ import SwiftUI
 
 // View
 struct ContentView: View {
-    @StateObject var data = Data()
+    @StateObject var data = TabReadingData()
     @AppStorage("darkMode") var darkMode = false
     
     var body: some View {
@@ -19,7 +19,7 @@ struct ContentView: View {
                     Row(article: article)
                 }
             }
-            .navigationTitle("demo")
+            .navigationTitle("Today")
             .toolbar {
                 Setting(darkMode: $darkMode)
             }

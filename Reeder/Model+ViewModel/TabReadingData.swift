@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Swift
 
 // 一篇文章的数据结构
 // Model
@@ -18,7 +17,7 @@ struct Article: Codable, Identifiable {
 
 // 传入 App 的是多篇文章组成的列表
 // ViewModel
-class Data: ObservableObject {
+class TabReadingData: ObservableObject {
     @Published var articles = [Article]()
     
 //    init(articles: [Article] = [Article]()) {
