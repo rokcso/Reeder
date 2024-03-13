@@ -30,6 +30,10 @@ struct ReederApp: App {
                             .tabItem {
                                 Label("Notes", systemImage: "note.text")
                             }
+                        CheckIn()
+                            .tabItem {
+                                Label("Map", systemImage: "mappin.and.ellipse")
+                            }
                     }
                 }
             }
