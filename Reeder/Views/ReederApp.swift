@@ -12,7 +12,7 @@ import LocalAuthentication
 @main
 struct ReederApp: App {
     let motionManager = MotionManager()
-    @State var locked = true
+    @State var locked = false
     
     var body: some Scene {
         WindowGroup {
