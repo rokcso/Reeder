@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		C4066EDC2BA094B9005E9CBE /* ReadingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4066EDB2BA094B9005E9CBE /* ReadingNote.swift */; };
 		C4728AA72BA0997F004EFFD4 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4728AA62BA0997F004EFFD4 /* RoundButton.swift */; };
-		C4728AAA2BA09BD1004EFFD4 /* FullScreenSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = C4728AA92BA09BD1004EFFD4 /* FullScreenSafariView */; };
 		C4728AAC2BA09DB7004EFFD4 /* TabNoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4728AAB2BA09DB7004EFFD4 /* TabNoteData.swift */; };
 		C4728AAE2BA0A312004EFFD4 /* NoteEntryAndList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4728AAD2BA0A312004EFFD4 /* NoteEntryAndList.swift */; };
-		C8082C542BA13FDE009B5CF1 /* ImagePickerView in Frameworks */ = {isa = PBXBuildFile; productRef = C8082C532BA13FDE009B5CF1 /* ImagePickerView */; };
+		C4D65D552BA1E56C002A94FD /* Reeder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4D65D532BA1E56C002A94FD /* Reeder.xcdatamodeld */; };
+		C4D65D572BA1E6D4002A94FD /* CloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D65D562BA1E6D4002A94FD /* CloudData.swift */; };
+		C4D65D592BA1EE2F002A94FD /* CheckInRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D65D582BA1EE2F002A94FD /* CheckInRow.swift */; };
 		C8082C562BA160C4009B5CF1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8082C552BA160C4009B5CF1 /* LocationManager.swift */; };
 		C8082C582BA17B3C009B5CF1 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8082C572BA17B3C009B5CF1 /* CheckIn.swift */; };
 		C84CB5422BA02A6B002893D8 /* ReederApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84CB5412BA02A6B002893D8 /* ReederApp.swift */; };
@@ -33,6 +34,9 @@
 		C4728AA62BA0997F004EFFD4 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		C4728AAB2BA09DB7004EFFD4 /* TabNoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNoteData.swift; sourceTree = "<group>"; };
 		C4728AAD2BA0A312004EFFD4 /* NoteEntryAndList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntryAndList.swift; sourceTree = "<group>"; };
+		C4D65D542BA1E56C002A94FD /* CheckInModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckInModel.xcdatamodel; sourceTree = "<group>"; };
+		C4D65D562BA1E6D4002A94FD /* CloudData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudData.swift; sourceTree = "<group>"; };
+		C4D65D582BA1EE2F002A94FD /* CheckInRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInRow.swift; sourceTree = "<group>"; };
 		C8082C552BA160C4009B5CF1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C8082C572BA17B3C009B5CF1 /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		C84CB53E2BA02A6B002893D8 /* Reeder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reeder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4728AAA2BA09BD1004EFFD4 /* FullScreenSafariView in Frameworks */,
-				C8082C542BA13FDE009B5CF1 /* ImagePickerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +76,11 @@
 			isa = PBXGroup;
 			children = (
 				C8F2E0B42BA0403200B9B96D /* TabReadingData.swift */,
+				C4D65D562BA1E6D4002A94FD /* CloudData.swift */,
 				C8082C552BA160C4009B5CF1 /* LocationManager.swift */,
 				C4728AAB2BA09DB7004EFFD4 /* TabNoteData.swift */,
 				C8F2E0BC2BA05BC100B9B96D /* MotionManager.swift */,
+				C4D65D532BA1E56C002A94FD /* Reeder.xcdatamodeld */,
 			);
 			path = "Model+ViewModel";
 			sourceTree = "<group>";
@@ -90,6 +94,7 @@
 				C8F2E0B62BA04CE800B9B96D /* Detail.swift */,
 				C8F2E0B82BA0557500B9B96D /* Setting.swift */,
 				C8082C572BA17B3C009B5CF1 /* CheckIn.swift */,
+				C4D65D582BA1EE2F002A94FD /* CheckInRow.swift */,
 				C8F2E0BE2BA06D5700B9B96D /* Locked.swift */,
 				C4066EDB2BA094B9005E9CBE /* ReadingNote.swift */,
 				C4728AAD2BA0A312004EFFD4 /* NoteEntryAndList.swift */,
@@ -151,8 +156,6 @@
 			);
 			name = Reeder;
 			packageProductDependencies = (
-				C4728AA92BA09BD1004EFFD4 /* FullScreenSafariView */,
-				C8082C532BA13FDE009B5CF1 /* ImagePickerView */,
 			);
 			productName = Reeder;
 			productReference = C84CB53E2BA02A6B002893D8 /* Reeder.app */;
@@ -183,8 +186,6 @@
 			);
 			mainGroup = C84CB5352BA02A6B002893D8;
 			packageReferences = (
-				C4728AA82BA09BD1004EFFD4 /* XCRemoteSwiftPackageReference "BetterSafariView" */,
-				C8082C522BA13FDE009B5CF1 /* XCRemoteSwiftPackageReference "ImagePickerView" */,
 			);
 			productRefGroup = C84CB53F2BA02A6B002893D8 /* Products */;
 			projectDirPath = "";
@@ -214,11 +215,14 @@
 			files = (
 				C8F2E0BB2BA056F300B9B96D /* Vibration.swift in Sources */,
 				C8082C582BA17B3C009B5CF1 /* CheckIn.swift in Sources */,
+				C4D65D592BA1EE2F002A94FD /* CheckInRow.swift in Sources */,
 				C84CB5442BA02A6B002893D8 /* ContentView.swift in Sources */,
 				C8F2E0BF2BA06D5700B9B96D /* Locked.swift in Sources */,
+				C4D65D572BA1E6D4002A94FD /* CloudData.swift in Sources */,
 				C8F2E0B72BA04CE800B9B96D /* Detail.swift in Sources */,
 				C4728AA72BA0997F004EFFD4 /* RoundButton.swift in Sources */,
 				C8F2E0B92BA0557500B9B96D /* Setting.swift in Sources */,
+				C4D65D552BA1E56C002A94FD /* Reeder.xcdatamodeld in Sources */,
 				C84CB5502BA02B80002893D8 /* Row.swift in Sources */,
 				C4728AAC2BA09DB7004EFFD4 /* TabNoteData.swift in Sources */,
 				C4066EDC2BA094B9005E9CBE /* ReadingNote.swift in Sources */,
@@ -439,37 +443,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		C4728AA82BA09BD1004EFFD4 /* XCRemoteSwiftPackageReference "BetterSafariView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stleamist/BetterSafariView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
+/* Begin XCVersionGroup section */
+		C4D65D532BA1E56C002A94FD /* Reeder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4D65D542BA1E56C002A94FD /* CheckInModel.xcdatamodel */,
+			);
+			currentVersion = C4D65D542BA1E56C002A94FD /* CheckInModel.xcdatamodel */;
+			path = Reeder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
 		};
-		C8082C522BA13FDE009B5CF1 /* XCRemoteSwiftPackageReference "ImagePickerView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ralfebert/ImagePickerView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C4728AA92BA09BD1004EFFD4 /* FullScreenSafariView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C4728AA82BA09BD1004EFFD4 /* XCRemoteSwiftPackageReference "BetterSafariView" */;
-			productName = FullScreenSafariView;
-		};
-		C8082C532BA13FDE009B5CF1 /* ImagePickerView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C8082C522BA13FDE009B5CF1 /* XCRemoteSwiftPackageReference "ImagePickerView" */;
-			productName = ImagePickerView;
-		};
-/* End XCSwiftPackageProductDependency section */
+/* End XCVersionGroup section */
 	};
 	rootObject = C84CB5362BA02A6B002893D8 /* Project object */;
 }

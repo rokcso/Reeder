@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-import ImagePickerView
+//import ImagePickerView
 
 struct NoteEntryAndList: View {
     @State var titleInput: String = ""
     @State var contentInput: String = ""
     @StateObject var noteData = TabNoteData()
     @State var image: UIImage?
-    @State var showImagePicker: Bool = false
+//    @State var showImagePicker: Bool = false
     
     var body: some View {
         VStack {
@@ -35,17 +35,17 @@ struct NoteEntryAndList: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
                 HStack {
-                    Button(action: {
-                        showImagePicker.toggle()
-                    }, label: {
-                        RoundButton(text: "Add image", image: "photo")
-                    })
-                    .sheet(isPresented: $showImagePicker, content: {
-                        ImagePickerView(sourceType: .photoLibrary, onImagePicked: {
-                            image in
-                            self.image = image
-                        })
-                    })
+//                    Button(action: {
+//                        showImagePicker.toggle()
+//                    }, label: {
+//                        RoundButton(text: "Add image", image: "photo")
+//                    })
+//                    .sheet(isPresented: $showImagePicker, content: {
+//                        ImagePickerView(sourceType: .photoLibrary, onImagePicked: {
+//                            image in
+//                            self.image = image
+//                        })
+//                    })
                     Spacer()
                     Button(action: {
                         save()

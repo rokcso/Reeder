@@ -12,6 +12,7 @@ import LocalAuthentication
 @main
 struct ReederApp: App {
     let motionManager = MotionManager()
+    let CloudDataManager = CloudData.shared
     @State var locked = false
     
     var body: some Scene {
@@ -31,6 +32,7 @@ struct ReederApp: App {
                                 Label("Notes", systemImage: "note.text")
                             }
                         CheckIn()
+                            .environment(\.managedObjectContext, CloudDataManager.container.viewContext)
                             .tabItem {
                                 Label("Map", systemImage: "mappin.and.ellipse")
                             }
