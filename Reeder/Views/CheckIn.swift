@@ -13,12 +13,20 @@ struct CheckIn: View {
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Entity.timestamp, ascending: false)], animation: .default)
     var checkIns: FetchedResults<Entity>
     @StateObject var locationManager = LocationManager()
+    @AppStorage("displayMode") var displayMode = 0
     
     var body: some View {
         NavigationView {
             List {
+                Picker(selection: $displayMode, label: Text("Display mode")) {
+                    Text("Simplify")
+                        .tag(0)
+                    Text("Detailed")
+                        .tag(1)
+                }
+                .pickerStyle(SegmentedPickerStyle())
                 ForEach(checkIns) { checkIn in
-                    CheckInRow(region: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: checkIn.latitude, longitude: checkIn.longtitude), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), locationManager: locationManager, date: displayDate(checkIn.timestamp!))
+                    CheckInRow(region: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: checkIn.latitude, longitude: checkIn.longtitude), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), locationManager: locationManager, displayMode: $displayMode, date: displayDate(checkIn.timestamp!))
                 }
                 .onDelete(perform: { indexSet in
                     indexSet.forEach { index in

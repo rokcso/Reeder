@@ -12,8 +12,10 @@ import CoreLocation
 struct CheckInRow: View {
     @State var region: MKCoordinateRegion
     @ObservedObject var locationManager: LocationManager
-    @State var city: String = ""
+    @Binding var displayMode: Int
     var date: String
+    @State var city: String = ""
+    @State var address: String = ""
     
     var body: some View {
         HStack {
@@ -26,6 +28,9 @@ struct CheckInRow: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 Text(date)
+                if displayMode == 1 {
+                    Text(address)
+                }
             }
             
             Spacer()
@@ -35,6 +40,7 @@ struct CheckInRow: View {
             locationManager.lookUpCurrentLocation(location: CLLocation(latitude: region.center.latitude, longitude: region.center.longitude)) {
                 placemark in
                 city = (placemark?.locality) ?? "111"
+                address = (placemark?.name) ?? "222"
             }
         }
     }
