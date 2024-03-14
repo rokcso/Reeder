@@ -18,8 +18,15 @@ struct CheckIn: View {
         NavigationView {
             List {
                 ForEach(checkIns) { checkIn in
-                    CheckInRow(region: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: checkIn.latitude, longitude: checkIn.longtitude), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), date: "日期")
+                    CheckInRow(region: MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: checkIn.latitude, longitude: checkIn.longtitude), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)), locationManager: locationManager, date: displayDate(checkIn.timestamp!))
                 }
+                .onDelete(perform: { indexSet in
+                    indexSet.forEach { index in
+                        let checkIn = checkIns[index]
+                        viewContext.delete(checkIn)
+                    }
+                    try? viewContext.save()
+                })
             }
             .navigationTitle("Check in")
             .toolbar {
@@ -39,6 +46,19 @@ struct CheckIn: View {
         new.latitude = locationManager.region.center.latitude
         new.longtitude = locationManager.region.center.longitude
         try? viewContext.save()
+    }
+    
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        formatter.locale = Locale(identifier: "zh_Hans")
+        formatter.setLocalizedDateFormatFromTemplate("MMMMdd")
+        return formatter
+    }()
+    
+    func displayDate(_ date: Date) -> String {
+        return dateFormatter.string(from: date)
     }
 }
 
